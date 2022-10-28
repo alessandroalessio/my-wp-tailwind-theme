@@ -7,7 +7,7 @@
             <div id="header-logo"><img src="<?php echo $header_logo; ?>"></div>
         <?php else : ?>
             <?php bloginfo( 'name' ); ?></a>
-            <span id="site-description" class="block"><?php bloginfo( 'description' ); ?>
+            <span id="site-description" class="block"><?php bloginfo( 'description' ); ?></span>
         <?php endif; ?>
-    </span>
+    </a>
 </div>

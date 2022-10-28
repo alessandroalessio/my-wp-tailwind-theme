@@ -9,9 +9,9 @@
 
 ?>
 
-<footer id="colophon">
+<footer>
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<?php /*if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<aside role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'atw' ); ?>">
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</aside>
@@ -29,24 +29,12 @@
 			);
 			?>
 		</nav>
-	<?php endif; ?>
+	<?php endif;*/ ?>
 
-	<div>
-		<?php
-		$atw_blog_info = get_bloginfo( 'name' );
-		if ( ! empty( $atw_blog_info ) ) :
-			?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php
-		endif;
-
-		/* translators: 1: WordPress link, 2: WordPress. */
-		printf(
-			'<a href="%1$s">proudly powered by %2$s</a>.',
-			esc_url( __( 'https://wordpress.org/', 'atw' ) ),
-			'WordPress'
-		);
-		?>
+	<div id="footer-bottom" class="border-t py-3">
+		<div id="footer-text" class="text-center">
+			<?php echo get_theme_mod('atw_footer_text'); ?>
+		</div>
 	</div>
 
 </footer><!-- #colophon -->

@@ -34,8 +34,14 @@ $(post-title-selector) {
  *
  * https://make.wordpress.org/core/2021/06/29/on-layout-and-content-width-in-wordpress-5-8/
  */
+
+.entry-title{
+	font-family: 'Be Vietnam Pro', cursive;
+}
+
 .page-content > *,
 .entry-content > * {
+	font-family: 'Roboto Serif', serif;
 	/* Content width from the `theme.json` file */
 	@apply mx-auto max-w-content;
 }
@@ -55,4 +61,23 @@ $(post-title-selector) {
 
 .entry-content > .alignright {
 	@apply float-right ml-8;
+}
+
+.entry-footer{
+	font-family: 'Space Mono', monospace;
+	@apply mx-auto mt-4 text-xs max-w-content;
+}
+
+.entry-footer > *::after{
+	content: '—';
+	@apply mx-2;
+}
+
+.entry-footer > *:last-child::after{
+	content: '';
+	@apply mx-0;
+}
+
+#main{
+  @apply my-24;
 }

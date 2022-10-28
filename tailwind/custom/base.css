@@ -12,5 +12,6 @@
  * editor.
 */
 body {
-	@apply bg-background font-sans text-foreground;
+	font-family: 'Be Vietnam Pro', cursive;
+	@apply bg-background text-foreground;
 }

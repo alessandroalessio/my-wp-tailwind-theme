@@ -22,4 +22,9 @@
 		} );
 	} );
 	
+	wp.customize( 'atw_footer_text', function( value ) {
+		value.bind( function( newval ) {
+			$( '#footer-text' ).html( newval );
+		} );
+	} );
 } )( jQuery );
