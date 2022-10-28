@@ -201,6 +201,9 @@ function atw_html5_comment( $comment, $args, $depth ) {
 	<?php
 }
 
+// Helpers
+include_once __DIR__.'/helpers.php';
+
 // Core Extensions
 include_once __DIR__.'/core/allow-svg.php';
 

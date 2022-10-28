@@ -16,5 +16,10 @@
 			$( '#site-description' ).html( newval );
 		} );
 	} );
+    wp.customize( 'atw_header_logo', function( value ) {
+		value.bind( function( newval ) {
+			$( '#header-logo img' ).attr('src', newval );
+		} );
+	} );
 	
 } )( jQuery );
