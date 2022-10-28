@@ -203,6 +203,7 @@ function atw_html5_comment( $comment, $args, $depth ) {
 
 // Helpers
 include_once __DIR__.'/helpers.php';
+include_once __DIR__.'/atw-walker-menu.php';
 
 // Core Extensions
 include_once __DIR__.'/core/allow-svg.php';
