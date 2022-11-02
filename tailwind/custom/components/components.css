@@ -7,6 +7,13 @@
  *
  * — from https://tailwindcss.com/docs/plugins#adding-components
  */
+::-moz-selection { /* Code for Firefox */
+	@apply text-white bg-primary;
+}
+::selection {
+	@apply text-white bg-primary;
+}
+
 
 .btn{
 	@apply inline-block py-1 px-3;

@@ -6,7 +6,7 @@
         array(
             'theme_location' => 'menu-1',
             'container'		=> 'ul',
-            'menu_class'      => 'hidden md:flex lg:flex space-x-3',
+            'menu_class'      => 'hidden md:flex lg:flex space-x-4',
             'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
             'walker' => New atw_walker_menu()
         )
