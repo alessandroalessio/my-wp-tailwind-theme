@@ -23,7 +23,7 @@ class atw_walker_menu extends Walker_Nav_Menu {
 			$output .= '<span>';
 		}
  
-        $output .= $item->post_title;
+        $output .= $item->title;
 
         if ($url && $url != '#') {
 			$output .= '</a>';

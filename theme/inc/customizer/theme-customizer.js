@@ -21,6 +21,16 @@
 			$( '#header-logo img' ).attr('src', newval );
 		} );
 	} );
+	wp.customize( 'atw_header_cta_label', function( value ) {
+		value.bind( function( newval ) {
+			$( '#header-cta' ).html( newval );
+		} );
+	} );
+	wp.customize( 'atw_header_cta_url', function( value ) {
+		value.bind( function( newval ) {
+			$( '#header-cta' ).attr('href', newval );
+		} );
+	} );
 	
 	wp.customize( 'atw_footer_text', function( value ) {
 		value.bind( function( newval ) {

@@ -99,7 +99,7 @@ function atw_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => __( 'Footer', 'atw' ),
-			'id'            => 'sidebar-1',
+			'id'            => 'footer',
 			'description'   => __( 'Add widgets here to appear in your footer.', 'atw' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

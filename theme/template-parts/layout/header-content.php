@@ -9,7 +9,7 @@
 
 ?>
 
-<header id="masthead" class="flex border-b py-5 px-2 items-center justify-between">
+<header id="masthead" class="flex border-b py-5 px-6 items-center justify-between">
 
 	<div class="w-4/6">
 		<?php get_template_part('template-parts/components/header-navigation'); ?>

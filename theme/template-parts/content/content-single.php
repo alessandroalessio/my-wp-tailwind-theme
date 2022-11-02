@@ -21,9 +21,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php atw_post_thumbnail(); ?>
-
-	<div class="entry-content prose">
+	<div class="entry-content">
 		<?php
 		the_content(
 			sprintf(
@@ -48,9 +46,5 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php atw_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-${ID} -->

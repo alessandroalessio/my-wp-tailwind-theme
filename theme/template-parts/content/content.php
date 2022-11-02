@@ -39,8 +39,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php atw_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
 </article><!-- #post-${ID} -->
