@@ -9,14 +9,18 @@
 
 ?>
 
-<header id="masthead" class="flex flex-row border-b py-5 px-2 items-center">
+<header id="masthead" class="flex border-b py-5 px-2 items-center justify-between">
 
-	<div class="basis-2/12">
+	<div class="w-4/6">
+		<?php get_template_part('template-parts/components/header-navigation'); ?>
+	</div>
+
+	<div class="text-center w-2/6">
 		<?php get_template_part('template-parts/components/header-logo'); ?>
 	</div>
 
-	<div class="basis-10/12 md:text-right">
-		<?php get_template_part('template-parts/components/header-navigation'); ?>
+	<div class="text-right w-4/6">
+		<?php get_template_part('template-parts/components/header-cta'); ?>
 	</div>
 
 </header><!-- #masthead -->

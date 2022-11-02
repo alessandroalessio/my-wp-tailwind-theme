@@ -209,6 +209,7 @@ include_once __DIR__.'/atw-walker-menu.php';
 include_once __DIR__.'/core/allow-svg.php';
 
 // Customizer Extension
+include_once __DIR__.'/customizer/customizer-section-globals.php';
 include_once __DIR__.'/customizer/customizer-section-header.php';
 include_once __DIR__.'/customizer/customizer-section-footer.php';
 
