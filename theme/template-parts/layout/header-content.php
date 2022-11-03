@@ -19,7 +19,8 @@
 		<?php get_template_part('template-parts/components/header-logo'); ?>
 	</div>
 
-	<div class="text-right w-4/6">
+	<div class="text-right w-4/6 flex justify-end items-center">
+		<?php get_template_part('template-parts/components/header-search'); ?>
 		<?php get_template_part('template-parts/components/header-cta'); ?>
 	</div>
 

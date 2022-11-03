@@ -6,3 +6,12 @@
  * For esbuild documentation, please see:
  * https://esbuild.github.io/
  */
+
+if ( document.getElementById('search-toggle') ) {
+    let searchToggle = document.getElementById('search-toggle');
+
+    searchToggle.addEventListener('click', () => {
+        document.getElementById('search-overlay').classList.toggle('hidden');
+        console.log('clicky');
+    });
+}
