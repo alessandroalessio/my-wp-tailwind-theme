@@ -170,8 +170,17 @@ $(post-title-selector) {
 #comments #respond .comment-form-comment > *{
 	@apply block;
 }
-#comments #respond #comment{
-	@apply block bg-gray-100 w-full rounded-md my-2;
+#comments #respond label{
+	@apply uppercase text-xs tracking-wide;
+}
+#comments #respond .comment-form-cookies-consent label{
+	@apply text-xs normal-case;
+}
+#comments #respond #comment,
+#comments #respond #author,
+#comments #respond #email,
+#comments #respond #url{
+	@apply block bg-gray-100 w-full rounded-md my-2 p-2 text-sm;
 }
 #comments #respond .form-submit{
 	@apply text-right py-2;
