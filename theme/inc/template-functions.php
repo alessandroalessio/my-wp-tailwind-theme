@@ -6,16 +6,6 @@
  */
 
 /**
- * Add a pingback url auto-discovery header for single posts, pages, or attachments.
- */
-function atw_pingback_header() {
-	if ( is_singular() && pings_open() ) {
-		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
-	}
-}
-add_action( 'wp_head', 'atw_pingback_header' );
-
-/**
  * Changes comment form default fields.
  *
  * @param array $defaults The default comment form arguments.
@@ -206,6 +196,7 @@ include_once __DIR__.'/helpers.php';
 include_once __DIR__.'/atw-walker-menu.php';
 
 // Core Extensions
+include_once __DIR__.'/core/pingback.php';
 include_once __DIR__.'/core/allow-svg.php';
 
 // Customizer Extension

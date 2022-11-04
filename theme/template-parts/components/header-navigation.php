@@ -1,4 +1,4 @@
-<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'atw' ); ?>" class="ml-auto md:inline-block">
+<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'atw' ); ?>" class="ml-2 md:inline-block">
     <button aria-controls="primary-menu" aria-expanded="false" class="inline-block md:hidden"><?php esc_html_e( 'Menu', 'atw' ); ?></button>
 
     <?php
