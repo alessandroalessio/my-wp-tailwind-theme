@@ -1,0 +1,7 @@
+/** Polylang */
+.languages-switcher{
+	@apply flex space-x-2 text-sm uppercase text-primary;
+}
+.languages-switcher .current-lang{
+	@apply flex space-x-2 text-sm uppercase text-black;
+}

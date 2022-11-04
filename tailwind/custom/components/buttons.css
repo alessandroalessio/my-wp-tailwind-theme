@@ -1,0 +1,14 @@
+@layer components {
+	.btn{
+		@apply inline-block py-1 px-3;
+	}
+	.btn-sm{
+		@apply inline-block py-1 px-2 text-xs;
+	}
+	.btn-lg{
+		@apply inline-block py-2 px-3 text-lg;
+	}
+	.btn-primary{
+		@apply bg-primary text-white rounded-full;
+	}
+}
