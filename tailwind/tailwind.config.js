@@ -22,7 +22,11 @@ module.exports = {
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {
-
+			fontFamily: {
+				sans: ['Be Vietnam Pro', 'sans-serif'],
+				serif: ['Roboto Serif', 'serif'],
+				mono: ['Space Mono', 'monospace']
+			}
 		},
 	},
 	corePlugins: {

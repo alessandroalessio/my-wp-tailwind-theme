@@ -14,18 +14,19 @@
 	@apply text-white bg-primary;
 }
 
-
-.btn{
-	@apply inline-block py-1 px-3;
-}
-.btn-sm{
-	@apply inline-block py-1 px-2 text-xs;
-}
-.btn-lg{
-	@apply inline-block py-2 px-3 text-lg;
-}
-.btn-primary{
-	@apply bg-primary text-white rounded-full;
+@layer components {
+	.btn{
+		@apply inline-block py-1 px-3;
+	}
+	.btn-sm{
+		@apply inline-block py-1 px-2 text-xs;
+	}
+	.btn-lg{
+		@apply inline-block py-2 px-3 text-lg;
+	}
+	.btn-primary{
+		@apply bg-primary text-white rounded-full;
+	}
 }
 
 /**
@@ -45,8 +46,7 @@ $(post-title-selector) {
 }
 
 .page-title{
-	font-family: 'Roboto Serif', serif;
-	@apply mx-auto mb-6 max-w-content text-3xl text-center text-neutral-900 font-serif text-primary;
+	@apply mx-auto mb-6 max-w-content text-3xl text-center text-neutral-900 font-serif text-primary font-serif;
 }
 
 /**
@@ -61,14 +61,13 @@ $(post-title-selector) {
  */
 
 .entry-title{
-	font-family: 'Be Vietnam Pro', cursive;
+	@apply font-sans;
 }
 
 .page-content > *,
 .entry-content > * {
-	font-family: 'Roboto Serif', serif;
 	/* Content width from the `theme.json` file */
-	@apply mx-auto max-w-content;
+	@apply mx-auto max-w-content font-serif;
 }
 
 .entry-content > .alignwide {
@@ -100,14 +99,12 @@ $(post-title-selector) {
 	@apply block mt-6 mx-auto w-32 bg-gray-200;
 }
 .entry-content.prose .read-more{
-	font-family: 'Space Mono', monospace;
-	@apply block text-right no-underline hover:underline uppercase text-sm;
+	@apply block text-right no-underline hover:underline uppercase text-sm font-mono;
 }
 
 .entry-meta,
 .entry-footer{
-	font-family: 'Space Mono', monospace;
-	@apply mx-auto mt-4 mb-8 text-xs max-w-content;
+	@apply mx-auto mt-4 mb-8 text-xs max-w-content font-mono;
 }
 
 .entry-meta > *::after,
@@ -151,8 +148,7 @@ $(post-title-selector) {
 }
 .navigation.post-navigation .nav-links .prev-title,
 .navigation.post-navigation .nav-links .next-title{
-	font-family: 'Be Vietnam Pro', cursive;
-	@apply block text-gray-700 text-sm text-ellipsis overflow-hidden w-full whitespace-nowrap;
+	@apply block text-gray-700 text-sm text-ellipsis overflow-hidden w-full whitespace-nowrap font-sans;
 }
 
 #content article.post{
@@ -175,8 +171,7 @@ $(post-title-selector) {
 	@apply flex space-x-2 items-center;
 }
 #comments ol li .comment-metadata{
-	font-family: 'Space Mono', monospace;
-	@apply mx-auto mt-2 mb-4 text-xs text-right max-w-content uppercase;
+	@apply mx-auto mt-2 mb-4 text-xs text-right max-w-content uppercase font-mono;
 }
 
 #comments #respond{
@@ -210,5 +205,5 @@ $(post-title-selector) {
 	@apply text-right py-2;
 }
 #comments #respond .form-submit input[type=submit]{
-	@apply inline-block bg-primary py-1 px-3 text-white rounded-full;
+	@apply btn btn-primary;
 }
