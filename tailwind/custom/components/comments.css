@@ -1,0 +1,42 @@
+#comments{
+	@apply mx-auto max-w-content;
+}
+#comments > h2{
+	@apply font-bold text-lg mb-4;
+}
+#comments ol li{
+	@apply bg-gray-100 p-6 rounded-lg;
+}
+#comments ol li .comment-author.vcard{
+	@apply flex space-x-2 items-center;
+}
+#comments ol li .comment-metadata{
+	@apply mx-auto mt-2 mb-4 text-xs text-right max-w-content uppercase font-mono;
+}
+#comments #respond{
+	@apply border rounded-md p-6 mt-6;
+}
+#comments #respond #reply-title{
+	@apply font-bold;
+}
+#comments #respond .logged-in-as{
+	@apply text-sm block;
+}
+#comments #respond .required-field-message{
+	@apply text-sm block mb-4;
+}
+#comments #respond .comment-form-comment > *{
+	@apply block;
+}
+#comments #respond label{
+	@apply uppercase text-xs tracking-wide;
+}
+#comments #respond .comment-form-cookies-consent label{
+	@apply text-xs normal-case;
+}
+#comments #respond .form-submit{
+	@apply text-right py-2;
+}
+#comments #respond .form-submit input[type=submit]{
+	@apply btn btn-primary;
+}

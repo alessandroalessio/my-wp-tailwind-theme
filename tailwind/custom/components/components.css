@@ -86,17 +86,18 @@ $(post-title-selector) {
 	@apply mx-auto mt-4 mb-8 text-xs max-w-content font-mono;
 }
 
-.entry-meta > *::after,
-.entry-footer > *::after{
+.entry-meta > *::before,
+.entry-footer > *::before{
 	content: '—';
 	@apply mx-2;
 }
 
-.entry-meta > *:last-child::after,
-.entry-footer > *:last-child::after{
-	content: '';
+.entry-meta > *:nth-child(2):before,
+.entry-footer > *:nth-child(2):before{
+	 content: '';
 	@apply mx-0;
 }
+
 
 #main{
   @apply my-24 mx-6;
@@ -137,52 +138,10 @@ $(post-title-selector) {
 	@apply mb-6 rounded-lg overflow-hidden;
 }
 
-#comments{
-	@apply mx-auto max-w-content;
+.post-edit-link{
+	@apply float-right border border-primary px-3 py-1;
 }
-#comments > h2{
-	@apply font-bold text-lg mb-4;
-}
-#comments ol li{
-	@apply bg-gray-100 p-6 rounded-lg;
-}
-#comments ol li .comment-author.vcard{
-	@apply flex space-x-2 items-center;
-}
-#comments ol li .comment-metadata{
-	@apply mx-auto mt-2 mb-4 text-xs text-right max-w-content uppercase font-mono;
-}
-
-#comments #respond{
-	@apply border rounded-md p-6 mt-6;
-}
-#comments #respond #reply-title{
-	@apply font-bold;
-}
-#comments #respond .logged-in-as{
-	@apply text-sm block;
-}
-#comments #respond .required-field-message{
-	@apply text-sm block mb-4;
-}
-#comments #respond .comment-form-comment > *{
-	@apply block;
-}
-#comments #respond label{
-	@apply uppercase text-xs tracking-wide;
-}
-#comments #respond .comment-form-cookies-consent label{
-	@apply text-xs normal-case;
-}
-#comments #respond #comment,
-#comments #respond #author,
-#comments #respond #email,
-#comments #respond #url{
-	@apply block bg-gray-100 w-full rounded-md my-2 p-2 text-sm;
-}
-#comments #respond .form-submit{
-	@apply text-right py-2;
-}
-#comments #respond .form-submit input[type=submit]{
-	@apply btn btn-primary;
+.post-edit-link:before{
+	content: '';
+	@apply m-0;
 }

@@ -7,6 +7,25 @@
  * https://esbuild.github.io/
  */
 
+/**
+ * Navigation Mobile
+ */
+ if ( document.getElementById('navigation-mobile-toggle') ) {
+    let navMobileToggle = document.getElementById('navigation-mobile-toggle');
+    navMobileToggle.addEventListener('click', () => {
+        document.getElementById('navigation-overlay').classList.toggle('hidden');
+    });
+
+    let navMoobileClose = document.getElementById('navigation-overlay-close');
+    navMoobileClose.addEventListener('click', () => {
+        document.getElementById('navigation-overlay').classList.toggle('hidden');
+
+    });
+}
+
+/**
+ * Search
+ */
 if ( document.getElementById('search-toggle') ) {
     let searchToggle = document.getElementById('search-toggle');
     searchToggle.addEventListener('click', () => {

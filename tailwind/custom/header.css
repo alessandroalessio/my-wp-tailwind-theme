@@ -1,0 +1,14 @@
+header #site-navigation .current_page_item a{
+    @apply text-secondary;
+}
+header #site-navigation a{
+    @apply relative inline-block py-4 overflow-hidden;
+}
+header #site-navigation a:after{
+    content: ' ';
+    @apply absolute bottom-0 -left-8 block h-1 w-8 bg-primary ease-in-out duration-1000;
+}
+header #site-navigation a:hover::after{
+    content: ' ';
+    @apply absolute bottom-0 left-0 block h-1 w-8 bg-primary;
+}

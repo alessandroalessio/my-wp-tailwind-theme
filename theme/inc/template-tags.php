@@ -14,7 +14,7 @@ if ( ! function_exists( 'atw_posted_on' ) ) :
 	function atw_posted_on() {
 		$time_string = '<time datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<time datetime="%1$s">%2$s</time><time datetime="%3$s">%4$s</time>';
+			$time_string = '<time datetime="%1$s">%2$s</time>';
 		}
 
 		$time_string = sprintf(

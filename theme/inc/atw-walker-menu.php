@@ -16,7 +16,7 @@ class atw_walker_menu extends Walker_Nav_Menu {
 
 		$output .= '<li class="'.trim($li_class).'">';
         
-        $url = get_permalink( $item->ID );
+        $url = $item->url;
         if ($url && $url != '#') {
 			$output .= '<a href="' . $url . '" title="'.$item->post_name.'">';
 		} else {

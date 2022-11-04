@@ -1,0 +1,10 @@
+input[type=text],
+input[type=email],
+textarea{
+    @apply block bg-gray-100 w-full rounded-md my-2 p-2 text-sm;
+}
+
+input[type=button],
+input[type=submit]{
+    @apply btn btn-primary;
+}

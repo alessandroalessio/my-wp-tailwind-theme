@@ -21,3 +21,11 @@
 body {
 	@apply bg-background text-foreground font-sans;
 }
+
+a, a:link{
+	@apply ease-in-out duration-200;
+}
+
+a:hover, a:active{
+	@apply text-primary;
+}
