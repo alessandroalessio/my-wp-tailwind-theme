@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<section id="primary">
-		<main id="main">
+		<main id="main" class="<?php main_classes('px-6 mx-auto'); ?>">
 
 		<?php
 		if ( have_posts() ) {

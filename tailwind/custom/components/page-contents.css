@@ -1,0 +1,17 @@
+#content input[type=text],
+#content input[type=email],
+#content textarea{
+    @apply bg-gray-100 rounded-md;
+}
+
+#content input[type=button],
+#content input[type=submit]{
+    @apply btn btn-primary;
+}
+
+#content ul{
+    @apply max-w-fit list-inside mb-4;
+}
+#content ul > li{
+    @apply list-item list-disc block my-2;
+}

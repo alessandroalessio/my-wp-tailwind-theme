@@ -203,9 +203,18 @@ include_once __DIR__.'/core/allow-svg.php';
 include_once __DIR__.'/customizer/customizer-section-globals.php';
 include_once __DIR__.'/customizer/customizer-section-header.php';
 include_once __DIR__.'/customizer/customizer-section-footer.php';
+include_once __DIR__.'/customizer/customizer-section-contacts.php';
 
+// Shortcode
+include_once __DIR__.'/shortcode/themedata.php';
 
-function mytheme_customizer_live_preview(){
+// TGM (Reccomended Plugins Activator)
+include_once __DIR__.'/reccomended-plugins.php';
+
+// Custom Fields (CMB2)
+include_once __DIR__.'/cmb2/content-fields.php';
+
+function atw_customizer_live_preview(){
 	wp_enqueue_script( 
 		'mytheme-themecustomizer',
 		get_template_directory_uri().'/inc/customizer/theme-customizer.js',
@@ -214,4 +223,4 @@ function mytheme_customizer_live_preview(){
 		true
 	);
 }
-add_action( 'customize_preview_init', 'mytheme_customizer_live_preview' );
+add_action( 'customize_preview_init', 'atw_customizer_live_preview' );

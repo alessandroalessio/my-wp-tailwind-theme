@@ -16,3 +16,10 @@ function is_svg($file_url){
     }
     
 }
+
+function main_classes($extra_classes=''){
+    $std_classes = get_post_meta( get_the_ID(), 'content_container_size', true).' ';
+    $std_classes .= $extra_classes;
+
+    echo trim($std_classes);
+}

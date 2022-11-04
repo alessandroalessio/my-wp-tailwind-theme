@@ -44,11 +44,20 @@
 			'hide_current'=> 0, //hides the current language if set to 1 (default: 0)
 			'raw' => 0 //use this to create your own custom language switcher (default:0)
 		]); ?>
+		
 		<?php
 		/**
 		 * Search
 		 */
 		if ( get_theme_mod('atw_show_search_in_header')!='no' && get_theme_mod('atw_show_search_in_header')=='yes-right' ) get_template_part('template-parts/components/header-search'); ?>
+		
+		<?php
+		/**
+		 * Social
+		 */
+		get_template_part('template-parts/components/header-social');
+		?>
+
 		<?php
 		/**
 		 * Call to Action

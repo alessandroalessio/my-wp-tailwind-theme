@@ -21,11 +21,11 @@
  * `postcss.config.js` file for details.
  */
 $(post-title-selector) {
-	@apply mx-auto mb-6 max-w-content text-3xl font-extrabold text-neutral-900;
+	@apply mx-auto mb-6 text-3xl font-extrabold text-neutral-900;
 }
 
 .page-title{
-	@apply mx-auto mb-6 max-w-content text-3xl text-center text-neutral-900 font-serif text-primary font-serif;
+	@apply mx-auto mb-6 text-3xl text-center text-neutral-900 font-serif text-primary font-serif;
 }
 
 /**
@@ -45,8 +45,7 @@ $(post-title-selector) {
 
 .page-content > *,
 .entry-content > * {
-	/* Content width from the `theme.json` file */
-	@apply mx-auto max-w-content font-serif;
+	@apply mx-auto font-serif;
 }
 
 .entry-content > .alignwide {
@@ -100,7 +99,7 @@ $(post-title-selector) {
 
 
 #main{
-  @apply my-24 mx-6;
+  @apply my-24;
 }
 
 .navigation{

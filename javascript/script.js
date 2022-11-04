@@ -24,6 +24,22 @@
 }
 
 /**
+ * Header Social
+ */
+ if ( document.getElementById('header-social-toggle') ) {
+    let headerSocialToggle = document.getElementById('header-social-toggle');
+    headerSocialToggle.addEventListener('click', () => {
+        document.getElementById('header-social-overlay').classList.toggle('hidden');
+    });
+
+    let headerSocialClose = document.getElementById('header-social-close');
+    headerSocialClose.addEventListener('click', () => {
+        document.getElementById('header-social-overlay').classList.toggle('hidden');
+
+    });
+}
+
+/**
  * Search
  */
 if ( document.getElementById('search-toggle') ) {
