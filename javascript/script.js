@@ -9,9 +9,13 @@
 
 if ( document.getElementById('search-toggle') ) {
     let searchToggle = document.getElementById('search-toggle');
-
     searchToggle.addEventListener('click', () => {
         document.getElementById('search-overlay').classList.toggle('hidden');
-        console.log('clicky');
+    });
+
+    let searchClose = document.getElementById('search-close');
+    searchClose.addEventListener('click', () => {
+        document.getElementById('search-overlay').classList.toggle('hidden');
+
     });
 }

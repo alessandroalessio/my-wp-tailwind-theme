@@ -25,10 +25,10 @@ get_header();
 						array(
 							'next_text' => '<span aria-hidden="true">' . __( 'Next Post', 'atw' ) . '</span> ' .
 								'<span class="sr-only">' . __( 'Next post:', 'atw' ) . '</span> <br/>' .
-								'<span>%title</span>',
+								'<span class="next-title">%title</span>',
 							'prev_text' => '<span aria-hidden="true">' . __( 'Previous Post', 'atw' ) . '</span> ' .
 								'<span class="sr-only">' . __( 'Previous post:', 'atw' ) . '</span> <br/>' .
-								'<span>%title</span>',
+								'<span class="prev-title">%title</span>',
 						)
 					);
 				}

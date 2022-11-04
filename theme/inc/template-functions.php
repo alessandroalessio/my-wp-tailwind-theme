@@ -95,7 +95,7 @@ function atw_continue_reading_link() {
 			the_title( '<span class="sr-only">"', '"</span>', false )
 		);
 
-		return '<a href="' . esc_url( get_permalink() ) . '">' . $continue_reading . '</a>';
+		return '... <a href="' . esc_url( get_permalink() ) . '" class="read-more">' . $continue_reading . '</a>';
 	}
 }
 

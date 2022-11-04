@@ -3,7 +3,7 @@
 const selectors = ( 'editor' === process.env._TW_TARGET ) ? {
 	'post-title-selector': '.editor-post-title__input',
 } : {
-	'post-title-selector': '.page-title, .entry-title',
+	'post-title-selector': '.entry-title',
 };
 
 module.exports = {

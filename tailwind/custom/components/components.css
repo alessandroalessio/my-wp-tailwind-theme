@@ -44,6 +44,11 @@ $(post-title-selector) {
 	@apply mx-auto mb-6 max-w-content text-3xl font-extrabold text-neutral-900;
 }
 
+.page-title{
+	font-family: 'Roboto Serif', serif;
+	@apply mx-auto mb-6 max-w-content text-3xl text-center text-neutral-900 font-serif text-primary;
+}
+
 /**
  * Layout styles for centered content areas
  *
@@ -94,6 +99,10 @@ $(post-title-selector) {
 	height: 1px;
 	@apply block mt-6 mx-auto w-32 bg-gray-200;
 }
+.entry-content.prose .read-more{
+	font-family: 'Space Mono', monospace;
+	@apply block text-right no-underline hover:underline uppercase text-sm;
+}
 
 .entry-meta,
 .entry-footer{
@@ -129,6 +138,21 @@ $(post-title-selector) {
 
 .navigation.post-navigation{
 	@apply mt-8 py-4 border-t border-b border-gray-200 text-sm;
+}
+.navigation.post-navigation .nav-links{
+	font-family: 'Roboto Serif', serif;
+	@apply flex space-x-4 text-xs text-primary;
+}
+.navigation.post-navigation .nav-links > div{
+	@apply md:w-1/2 text-left;
+}
+.navigation.post-navigation .nav-links .nav-next{
+	@apply md:w-1/2 text-right;
+}
+.navigation.post-navigation .nav-links .prev-title,
+.navigation.post-navigation .nav-links .next-title{
+	font-family: 'Be Vietnam Pro', cursive;
+	@apply block text-gray-700 text-sm text-ellipsis overflow-hidden w-full whitespace-nowrap;
 }
 
 #content article.post{
