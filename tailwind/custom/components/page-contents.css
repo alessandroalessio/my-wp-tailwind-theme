@@ -9,9 +9,9 @@
     @apply btn btn-primary;
 }
 
-#content ul{
+#content .entry-content ul{
     @apply max-w-fit list-inside mb-4;
 }
-#content ul > li{
+#content .entry-content ul > li{
     @apply list-item list-disc block my-2;
 }

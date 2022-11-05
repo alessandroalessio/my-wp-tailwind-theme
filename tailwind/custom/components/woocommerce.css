@@ -1,0 +1,14 @@
+.woocommerce .products{
+    border: 2px solid lime;
+}
+
+.woocommerce .products .product{
+    border: 2px solid purple;
+    display: block;
+    @apply list-none block;
+}
+
+.woocommerce .products .product a{
+    background-color: red;
+    @apply bg-primary;
+}
