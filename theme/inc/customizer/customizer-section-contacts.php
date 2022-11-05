@@ -84,7 +84,6 @@ function atw_customizer_section_contacts( $wp_customize ) {
  // Whatsapp
  $wp_customize->add_setting( 'atw_contacts_whatsapp' , array(
     'default'		=> '',
-    'sanitize_callback' => 'esc_url_raw'
 ) );
 $wp_customize->add_control( 'atw_contacts_whatsapp', array(
    'id'        => 'atw_contacts_whatsapp', 
@@ -92,5 +91,20 @@ $wp_customize->add_control( 'atw_contacts_whatsapp', array(
    'section'   => 'atw_contacts_section',
    'settings'  => 'atw_contacts_whatsapp'
 ) );
+$wp_customize->add_setting( 'atw_contacts_show_whatsapp', array(
+   'default' => 'no',
+ ) );
+ 
+ $wp_customize->add_control( 'atw_contacts_show_whatsapp', array(
+   'type' => 'select',
+   'section' => 'atw_contacts_section', // Add a default or your own section
+   'label' => __( 'Show Whatsapp Call to Action', 'atw' ),
+   'description' => __( 'Display Whatsapp Button Fixed', 'atw' ),
+   'choices' => array(
+     'no' => __( 'No' ),
+     'yes-bottom-right' => __( 'Yes, on bottom right', 'atw' ),
+     'yes-bottom-left' => __( 'Yes, on bottom left', 'atw' ),
+   ),
+ ) );
 }
 add_action( 'customize_register', 'atw_customizer_section_contacts' );

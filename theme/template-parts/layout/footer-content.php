@@ -25,3 +25,5 @@
 	<?php endif; ?>
 
 </footer><!-- #colophon -->
+
+<?php get_template_part('template-parts/components/whatsapp-cta'); ?>
