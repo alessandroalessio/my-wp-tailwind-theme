@@ -30,6 +30,21 @@ function atw_customizer_section_header( $wp_customize ) {
           'no' => __( 'No' ),
         ),
     ) );
+	// Social Menu
+	$wp_customize->add_setting( 'atw_show_social_nav_in_header' , array(
+		'default'	=> 'no',
+	) );
+    $wp_customize->add_control( 'atw_show_social_nav_in_header', array(
+        'type' => 'radio',
+        'section' => 'atw_header_section', // Add a default or your own section
+        'label' => __( 'Show Social Nav in Header'),
+		'description' => _( 'To view changes in customizer you need to reload' ),
+        'choices' => array(
+          'yes-right' => __( 'Yes, on right' ),
+		//   'yes-left' => __( 'Yes, on left' ),
+          'no' => __( 'No' ),
+        ),
+    ) );
 	// Call to Action
 	$wp_customize->add_setting( 'atw_header_cta_url' , array(
 		'default'	=> '',

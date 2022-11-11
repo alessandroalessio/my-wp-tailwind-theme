@@ -55,7 +55,7 @@
 		/**
 		 * Social
 		 */
-		get_template_part('template-parts/components/header-social');
+		if ( get_theme_mod('atw_show_social_nav_in_header')!='no' && get_theme_mod('atw_show_social_nav_in_header')=='yes-right' ) get_template_part('template-parts/components/header-social');
 		?>
 
 		<?php
