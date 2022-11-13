@@ -20,7 +20,7 @@ function atw_customizer_section_header( $wp_customize ) {
 		'default'	=> 'no',
 	) );
     $wp_customize->add_control( 'atw_show_search_in_header', array(
-        'type' => 'radio',
+        'type' => 'select',
         'section' => 'atw_header_section', // Add a default or your own section
         'label' => __( 'Show Search in Header'),
 		'description' => _( 'To view changes in customizer you need to reload' ),
@@ -35,13 +35,13 @@ function atw_customizer_section_header( $wp_customize ) {
 		'default'	=> 'no',
 	) );
     $wp_customize->add_control( 'atw_show_social_nav_in_header', array(
-        'type' => 'radio',
+        'type' => 'select',
         'section' => 'atw_header_section', // Add a default or your own section
         'label' => __( 'Show Social Nav in Header'),
 		'description' => _( 'To view changes in customizer you need to reload' ),
         'choices' => array(
           'yes-right' => __( 'Yes, on right' ),
-		//   'yes-left' => __( 'Yes, on left' ),
+		  'yes-left' => __( 'Yes, on left' ),
           'no' => __( 'No' ),
         ),
     ) );

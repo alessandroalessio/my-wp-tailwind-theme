@@ -9,7 +9,7 @@ function atw_customizer_section_content( $wp_customize ) {
 		'default'	=> 'max-w-full',
 	) );
     $wp_customize->add_control( 'atw_content_container_size', array(
-        'type' => 'radio',
+        'type' => 'select',
         'section' => 'atw_content_section', // Add a default or your own section
         'label' => __( 'General Container Size'),
 		'description' => _( 'General Container Size for Website Content' ),

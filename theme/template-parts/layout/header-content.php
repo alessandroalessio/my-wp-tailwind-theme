@@ -17,6 +17,14 @@
 		 * Search
 		 */
 		if ( get_theme_mod('atw_show_search_in_header')!='no' && get_theme_mod('atw_show_search_in_header')=='yes-left' ) get_template_part('template-parts/components/header-search'); ?>
+
+		<?php
+		/**
+		 * Social
+		 */
+		if ( get_theme_mod('atw_show_social_nav_in_header')!='no' && get_theme_mod('atw_show_social_nav_in_header')=='yes-left' ) get_template_part('template-parts/components/header-social');
+		?>
+
 		<?php
 		/**
 		 * Header Navigation
