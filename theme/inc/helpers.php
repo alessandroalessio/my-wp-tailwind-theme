@@ -17,14 +17,15 @@ function is_svg($file_url){
     
 }
 
-function main_classes($extra_classes=''){
-    
+function atw_main_classes($extra_classes=''){
+
     if ( get_post_meta( get_the_ID(), 'content_container_size', true)!='' ) {
         $std_classes = get_post_meta( get_the_ID(), 'content_container_size', true).' ';
     } else {
-        $atw_content_container_size = get_theme_mod('atw_content_container_size');
+        $std_classes = get_theme_mod('atw_content_container_size');
     }
 
-    $std_classes .= $extra_classes;
+    $std_classes .= ' '.$extra_classes;
+
     echo trim($std_classes);
 }

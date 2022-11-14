@@ -16,7 +16,15 @@ get_header();
 ?>
 
 	<section id="primary">
-		<main id="main" class="<?php main_classes('px-6 mx-auto'); ?>">
+		<main id="main" class="<?php atw_main_classes('px-6 mx-auto'); ?>">
+
+		<?php if ( is_home() && get_theme_mod('atw_content_hero_title') ) : ?>
+			<div id="hero" class="bg-gray-100 rounded-xl p-8 mb-12">
+				<h2 class="font-bold text-3xl"><?php echo get_theme_mod('atw_content_hero_title'); ?></h2>
+				<p class="font-serif my-4"><?php echo get_theme_mod('atw_content_hero_text'); ?></p>
+				<div class="text-right"><a href="<?php echo get_theme_mod('atw_content_hero_cta_url'); ?>" class="btn btn-primary"><?php echo get_theme_mod('atw_content_hero_cta_label'); ?></a></div>
+			</div>
+		<?php endif; ?>
 
 		<?php
 		if ( have_posts() ) {
