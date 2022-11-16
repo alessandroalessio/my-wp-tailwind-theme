@@ -154,3 +154,11 @@ function atw_search_overlay() {
 	get_template_part('template-parts/components/search-overlay');
 } 
 if ( get_theme_mod('atw_show_search_in_header')!='no' ) add_action('wp_body_open', 'atw_search_overlay');
+
+/**
+ * Action for display Social Overlay
+ */
+function atw_social_overlay() { 
+	get_template_part('template-parts/components/social-overlay');
+} 
+if ( get_theme_mod('atw_show_social_nav_in_header')!='no' ) add_action('wp_body_open', 'atw_social_overlay');
