@@ -8,6 +8,7 @@
     - [Whatsapp Call to Action](whatsappcalltoaction)
 - [Shortcode](#shortcode)
     - [Theme Data](#themedatashortcode)
+    - [Alert](#alertshortcode)
 
 ## Header
 You can customize header from the section "Header" into the customizer
@@ -39,3 +40,10 @@ This in the Example:
         [themedata name="atw_contacts_tw"]
 
 If you need to retrive the field name of some Customizer's field you can *inspect* code with your Browser and get name field from the attribute **data-customize-setting-link**.
+
+### Alert Shortcode
+You can display an alert using a shortcode. You can customize type (info, success, warning, danger) passing the type as a parameter. 
+
+This in the Example:
+
+        [alert type="warning"]Your message in alert...[/alert]

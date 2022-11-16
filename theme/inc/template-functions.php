@@ -208,6 +208,7 @@ include_once __DIR__.'/customizer/customizer-section-contacts.php';
 
 // Shortcode
 include_once __DIR__.'/shortcode/themedata.php';
+include_once __DIR__.'/shortcode/alert.php';
 
 // TGM (Reccomended Plugins Activator)
 include_once __DIR__.'/reccomended-plugins.php';

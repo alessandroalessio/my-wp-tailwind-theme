@@ -1,0 +1,15 @@
+.alert{
+    @apply border p-2 mb-2;
+}
+.alert.alert-info{
+    @apply border border-l-4 border-l-blue-900 p-2 mb-2;
+}
+.alert.alert-danger{
+    @apply border border-l-4 border-l-red-700 p-2 mb-2;
+}
+.alert.alert-warning{
+    @apply border border-l-4 border-l-yellow-500 p-2 mb-2;
+}
+.alert.alert-success{
+    @apply border border-l-4 border-l-green-700 p-2 mb-2;
+}

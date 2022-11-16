@@ -23,7 +23,7 @@ header #site-navigation a:hover::after{
     @apply fixed top-0 left-0 w-full z-10 overflow-hidden;
 }
 
-body.admin-bar .header-fixed-wrapper{
+body.admin-bar .header-wrapper{
     top: 32px;
 }
 

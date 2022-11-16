@@ -131,7 +131,7 @@ $(post-title-selector) {
 }
 
 #content article.post{
-	@apply mx-auto max-w-content;
+	@apply mx-auto;
 }
 #content article.post figure{
 	@apply mb-6 rounded-lg overflow-hidden;
