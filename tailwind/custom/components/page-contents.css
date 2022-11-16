@@ -9,9 +9,39 @@
     @apply btn btn-primary;
 }
 
+
+
+#content .entry-content h1{
+    @apply text-4xl font-sans mb-2;
+}
+
+#content .entry-content h2{
+    @apply text-3xl font-sans mb-2;
+}
+
+#content .entry-content h3{
+    @apply text-2xl font-sans mb-2;
+}
+
+#content .entry-content h4{
+    @apply text-xl font-sans mb-2;
+}
+
+#content .entry-content h5{
+    @apply text-lg font-sans mb-2;
+}
+
+#content .entry-content h6{
+    @apply text-base font-sans mb-2;
+}
+
 #content .entry-content ul{
     @apply max-w-fit list-inside mb-4;
 }
 #content .entry-content ul > li{
     @apply list-item list-disc block my-2;
+}
+
+#content .entry-content hr{
+    @apply my-6;
 }
