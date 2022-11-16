@@ -4,6 +4,8 @@
     - [Header Search](#headersearch)
 - [Content](#content)
     - [Content Hero](#contenthero)
+- [Social Navigation](#socialnavigation)
+    - [Whatsapp Call to Action](whatsappcalltoaction)
 - [Shortcode](#shortcode)
     - [Theme Data](#themedatashortcode)
 
@@ -19,6 +21,12 @@ You can customize the position of icon on header (choosing right - or left for c
 ### Content Hero
 You can easily customize the Hero Section, available only in the Home Page, by the Content > Hero in the Customizer. If you compile the Title field, the Hero will be displayed, else it will be hidden.
 
+# Social Navigation
+You can customize your Social Network from the Customizer (section Contacts) and it will be displayed in the Social Navigation.
+You can a toggle display button in the Header using the Customizer's field with label "Show Social Nav in Header". If there is no one social network inputed into che Customizer, the toggle button will be displayed but Social Navigation will be hidden.
+
+### Whatsapp Call to Action
+You can display an icon with direct link to your Whatsapp number in the Customizer at the section ***Contacts > Show Whatsapp Call to Action***
 
 ## Shortcode
 
