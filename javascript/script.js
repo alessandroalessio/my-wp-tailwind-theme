@@ -94,5 +94,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         });
     }
-    
+
+    /**
+     * Close overlay on press Esc
+     */
+    document.addEventListener('keydown', function(e) {
+        if (e.key=='Escape') {
+            if ( document.getElementById('navigation-overlay') ) { document.getElementById('navigation-overlay').classList.add('hidden'); }
+            if ( document.getElementById('header-social-overlay') ) { document.getElementById('header-social-overlay').classList.add('hidden'); }
+            if ( document.getElementById('search-overlay') ) { document.getElementById('search-overlay').classList.add('hidden'); }
+        }
+    });
+
 });
