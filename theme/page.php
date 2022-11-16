@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<section id="primary">
-		<main id="main" class="<?php main_classes('px-6 mx-auto'); ?>">
+		<main id="main" class="<?php atw_main_classes('px-6 mx-auto'); ?>">
 
 			<?php
 

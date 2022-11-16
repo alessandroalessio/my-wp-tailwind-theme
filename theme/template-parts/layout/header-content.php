@@ -11,18 +11,26 @@
 <div id="main-header-wrapper">
 	<header id="masthead" class="bg-white flex border-b py-5 px-6 items-center justify-between <?php echo ( get_theme_mod('atw_header_fixed_on_scroll')=='true' ) ? 'fix-on-scroll' : ''; ?>">
 
-		<div class="w-4/6 flex justify-start items-center">
-			<?php
-			/**
-			 * Search
-			 */
-			if ( get_theme_mod('atw_show_search_in_header')!='no' && get_theme_mod('atw_show_search_in_header')=='yes-left' ) get_template_part('template-parts/components/header-search'); ?>
-			<?php
-			/**
-			 * Header Navigation
-			 */
-			get_template_part('template-parts/components/header-navigation'); ?>
-		</div>
+	<div class="w-4/6 flex justify-start items-center">
+		<?php
+		/**
+		 * Search
+		 */
+		if ( get_theme_mod('atw_show_search_in_header')!='no' && get_theme_mod('atw_show_search_in_header')=='yes-left' ) get_template_part('template-parts/components/header-search'); ?>
+
+		<?php
+		/**
+		 * Social
+		 */
+		if ( get_theme_mod('atw_show_social_nav_in_header')!='no' && get_theme_mod('atw_show_social_nav_in_header')=='yes-left' ) get_template_part('template-parts/components/header-social');
+		?>
+
+		<?php
+		/**
+		 * Header Navigation
+		 */
+		get_template_part('template-parts/components/header-navigation'); ?>
+	</div>
 
 		<div class="text-center w-2/6">
 			<?php get_template_part('template-parts/components/header-logo'); ?>
