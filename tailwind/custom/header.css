@@ -12,3 +12,26 @@ header #site-navigation a:hover::after{
     content: ' ';
     @apply absolute bottom-0 left-0 block h-1 w-8 bg-primary;
 }
+
+.header-fixed-wrapper{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+    z-index: 10;
+    overflow: hidden;
+    @apply fixed top-0 left-0 w-full z-10 overflow-hidden;
+}
+
+body.admin-bar .header-fixed-wrapper{
+    top: 32px;
+}
+
+.header-fixed-wrapper #masthead{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.header-fixed-wrapper #masthead.sticky{
+    transform: translateY(0%);
+}
