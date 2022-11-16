@@ -10,7 +10,6 @@ if ( ! defined( 'ATW_VERSION' ) ) {
  */
 require get_template_directory() . '/inc/theme-setup.php';
 
-
 /**
  * Register widget area.
  */
@@ -35,6 +34,14 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Action for display Search Overlay
+ */
+function atw_navigation_overlay() { 
+	get_template_part('template-parts/components/navigation-overlay');
+} 
+add_action('wp_body_open', 'atw_navigation_overlay');
 
 /**
  * Action for display Search Overlay
