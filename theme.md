@@ -9,6 +9,8 @@
 - [Shortcode](#shortcode)
     - [Theme Data](#themedatashortcode)
     - [Alert](#alertshortcode)
+- [Plugin Support](#pluginsupport)
+- [Extra Support](#extrasupport)
 
 ## Header
 You can customize header from the section "Header" into the customizer
@@ -47,3 +49,13 @@ You can display an alert using a shortcode. You can customize type (info, succes
 This in the Example:
 
         [alert type="warning"]Your message in alert...[/alert]
+
+# Plugin Support
+This theme support this plugins:
+- Polylang
+- Contact Form 7
+- Polylang
+
+# Extra Support
+This theme as some extra support included as a default feature:
+- Support for uploading SVG images

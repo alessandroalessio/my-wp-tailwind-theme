@@ -4,7 +4,7 @@
         <?php 
         $header_logo = get_theme_mod('atw_header_logo');
         if ( $header_logo!='' ) : ?>
-            <div id="header-logo"><img src="<?php echo $header_logo; ?>"></div>
+            <div id="header-logo"><img src="<?php echo $header_logo; ?>" class="w-full max-h-14"></div>
         <?php else : ?>
             <?php bloginfo( 'name' ); ?></a>
             <span id="site-description" class="block"><?php bloginfo( 'description' ); ?></span>
