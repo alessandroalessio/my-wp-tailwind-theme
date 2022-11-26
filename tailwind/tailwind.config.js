@@ -47,6 +47,5 @@ module.exports = {
 		// require( '@tailwindcss/aspect-ratio' ),
 		// require( '@tailwindcss/line-clamp' ),
 		// require( '@tailwindcss/container-queries' ),
-	],
-	important: '.woocommerce'
+	]
 };
