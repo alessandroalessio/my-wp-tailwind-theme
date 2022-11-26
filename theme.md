@@ -9,6 +9,7 @@
 - [Shortcode](#shortcode)
     - [Theme Data](#themedatashortcode)
     - [Alert](#alertshortcode)
+    - [Buttons](#buttonshortcode)
 - [Plugin Support](#pluginsupport)
 - [Extra Support](#extrasupport)
 
@@ -49,6 +50,13 @@ You can display an alert using a shortcode. You can customize type (info, succes
 This in the Example:
 
         [alert type="warning"]Your message in alert...[/alert]
+
+### Button Shortcode
+You can display a custom button using a shortcode. You can customize type (primary, secondary) passing the type as a parameter and an href attribute. In th content you can customize the label for the button. You can also customize the target (passing into the shortcode as attribute - default set as _self) and extra_classes attribute for adding custom classes at the element.
+
+This in the Example:
+
+        [button href="https://www.a2area.it" type="primary" target="_blank" extra_classes="italic"]My Button[/button]
 
 # Plugin Support
 This theme support this plugins:
