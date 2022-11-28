@@ -1,26 +1,43 @@
-header #site-navigation .current_page_item a{
-    @apply text-secondary;
+header #site-navigation > ul > .menu-item{
+    @apply relative inline-block overflow-hidden;
 }
-header #site-navigation a{
-    @apply relative inline-block py-4 overflow-hidden;
-}
-header #site-navigation a:after{
+header #site-navigation > ul > .menu-item::before{
     content: ' ';
     @apply absolute bottom-0 -left-8 block h-1 w-8 bg-primary ease-in-out duration-1000;
 }
-header #site-navigation a:hover::after{
+header #site-navigation > ul > .menu-item:hover::before{
     content: ' ';
     @apply absolute bottom-0 left-0 block h-1 w-8 bg-primary;
 }
+
+header .menu-item-has-children{
+    @apply relative flex items-center;
+}
+header .menu-item-has-children::after{
+    content: '+';
+    @apply inline-block rotate-90 ml-2 font-sans font-mono text-primary ease-in-out duration-500;
+}
+header .menu-item-has-children:hover::after{
+    @apply rotate-0;
+}
+
+
+header #site-navigation a{
+    @apply py-4;
+}
+header #site-navigation .current_page_item a{
+    @apply text-secondary;
+}
+
 
 .header-fixed-wrapper{
     /* position: fixed;
     top: 0;
     left: 0;
     width: 100%; */
-    z-index: 10;
-    overflow: hidden;
-    @apply fixed top-0 left-0 w-full z-10 overflow-hidden;
+    /* z-index: 10; */
+    /* overflow: hidden; */
+    @apply fixed top-0 left-0 w-full z-10;
 }
 
 body.admin-bar .header-wrapper{
@@ -34,4 +51,17 @@ body.admin-bar .header-wrapper{
 
 .header-fixed-wrapper #masthead.sticky{
     transform: translateY(0%);
+}
+
+
+header .menu-item-has-children .sub-menu{
+    @apply absolute top-full left-0 bg-white drop-shadow-lg z-50 p-4 w-48 hidden;
+}
+
+header .menu-item-has-children .sub-menu a{
+    @apply inline-block py-2;
+}
+
+header .menu-item-has-children:hover .sub-menu{
+    @apply inline-block;
 }

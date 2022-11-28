@@ -1,0 +1,6 @@
+#navigation-overlay .sub-menu{
+    @apply text-sm py-2;
+}
+#navigation-overlay .sub-menu a{
+    @apply inline-block py-1;
+}

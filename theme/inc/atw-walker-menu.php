@@ -15,10 +15,11 @@ class atw_walker_menu extends Walker_Nav_Menu {
         if ( is_object($item) && is_object($post) && $post->ID==$item->ID ) $li_class .= ' current';
 
 		$output .= '<li class="'.trim($li_class).'">';
+
         
         $url = $item->url;
         if ($url && $url != '#') {
-			$output .= '<a href="' . $url . '" title="'.$item->post_name.'">';
+			$output .= '<a href="' . $url . '" title="'.$item->post_name.'" class="inline-flex h-full">';
 		} else {
 			$output .= '<span>';
 		}
@@ -31,8 +32,11 @@ class atw_walker_menu extends Walker_Nav_Menu {
 			$output .= '</span>';
 		}
 
-
-        $output .= '</li>';
 	}
+
+    function end_el(&$output, $data_object, $depth = 0, $args = null, $current_object_id = 0){
+        
+        $output .= '</li>';
+    }
 
 }

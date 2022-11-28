@@ -8,7 +8,7 @@
                     'theme_location' => 'menu-1',
                     'container'		=> 'ul',
                     'menu_class'      => 'font-serif text-xl flex flex-col space-y-3',
-                    'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
+                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                     // 'walker' => New atw_walker_menu()
                 )
             );
