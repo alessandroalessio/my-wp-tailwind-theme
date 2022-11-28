@@ -4,6 +4,7 @@ function atw_customizer_section_globals( $wp_customize ) {
 		'title'      => __( 'Globals', 'eazytheme' ),
 		'priority'   => 80
 	) );
+	// Pingback
     $wp_customize->add_setting( 'atw_allow_pingback' , array(
 		'default'	=> 'no',
 	) );
@@ -16,16 +17,18 @@ function atw_customizer_section_globals( $wp_customize ) {
           'no' => __( 'No' ),
         ),
     ) );
-	// Logo
-	// $wp_customize->add_setting( 'atw_header_logo' , array(
-	// 	'default'	=> '',
-	// 	'transport'   => 'postMessage',
-	// ) );
-	// $wp_customize->add_control(new WP_Customize_Image_Control( $wp_customize, 'atw_header_logo', array(
-	// 	 'id'        => 'atw_header_logo', 
-	// 	 'label'     => __( 'Logo', 'eazytheme' ),
-	// 	 'section'   => 'atw_global_section',
-	// 	 'settings'  => 'atw_header_logo'
-	// ) ) );
+	// Globally add Tailwind CSS
+    $wp_customize->add_setting( 'atw_global_add_tailwind' , array(
+		'default'	=> 'no',
+	) );
+    $wp_customize->add_control( 'atw_global_add_tailwind', array(
+        'type' => 'radio',
+        'section' => 'atw_global_section', // Add a default or your own section
+        'label' => __( 'Add full Tailwind CSS'),
+        'choices' => array(
+          'yes' => __( 'Yes' ),
+          'no' => __( 'No' ),
+        ),
+    ) );
 }
 add_action( 'customize_register', 'atw_customizer_section_globals' );
