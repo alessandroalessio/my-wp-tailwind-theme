@@ -17,10 +17,16 @@
 	<?php endif; ?>
 
 	<?php if ( get_theme_mod('atw_footer_text')!='' ) : ?>
-		<div id="footer-bottom" class="border-t py-5 px-6">
+		<div id="footer-bottom" class="border-t py-5 px-6 <?php echo ( get_theme_mod('atw_footer_text_right')!='' ) ? 'flex justify-between' : ''; ?>">
 			<div id="footer-text" class="text-center">
 				<?php echo get_theme_mod('atw_footer_text'); ?>
 			</div>
+
+			<?php if ( get_theme_mod('atw_footer_text_right')!='' ) : ?>
+				<div id="footer-text-right" class="text-center">
+                    <?php echo get_theme_mod('atw_footer_text_right');?>
+                </div>
+			<?php endif; ?>
 		</div>
 	<?php endif; ?>
 
