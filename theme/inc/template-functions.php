@@ -210,12 +210,16 @@ include_once __DIR__.'/customizer/customizer-section-contacts.php';
 include_once __DIR__.'/shortcode/themedata.php';
 include_once __DIR__.'/shortcode/alert.php';
 include_once __DIR__.'/shortcode/button.php';
+include_once __DIR__.'/shortcode/social-icons.php';
 
 // TGM (Reccomended Plugins Activator)
 include_once __DIR__.'/reccomended-plugins.php';
 
 // Custom Fields (CMB2)
 include_once __DIR__.'/cmb2/content-fields.php';
+
+// Contact Form 7
+add_filter('wpcf7_autop_or_not', '__return_false');
 
 function atw_customizer_live_preview(){
 	wp_enqueue_script( 

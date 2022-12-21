@@ -21,11 +21,11 @@
  * `postcss.config.js` file for details.
  */
 $(post-title-selector) {
-	@apply mx-auto mb-6 text-3xl font-extrabold text-neutral-900;
+	@apply mx-auto mb-6 text-3xl font-extrabold;
 }
 
-.page-title{
-	@apply mx-auto mb-6 text-3xl text-center text-neutral-900 font-serif text-primary font-serif;
+.page-title {
+	@apply mx-auto mb-6 text-center font-serif font-serif text-3xl text-primary;
 }
 
 /**
@@ -39,13 +39,22 @@ $(post-title-selector) {
  * https://make.wordpress.org/core/2021/06/29/on-layout-and-content-width-in-wordpress-5-8/
  */
 
-.entry-title{
+.entry-title {
 	@apply font-sans;
 }
 
 .page-content > *,
 .entry-content > * {
-	@apply mx-auto font-serif;
+	@apply mx-auto;
+}
+
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+	@apply text-primary;
 }
 
 .entry-content > .alignwide {
@@ -65,82 +74,81 @@ $(post-title-selector) {
 	@apply float-right ml-8;
 }
 
-.entry-content.prose{
-	@apply mb-12;
+.entry-content.prose {
+	@apply mb-12 text-white;
 }
-.entry-content p{
+.entry-content p {
 	@apply mb-4;
 }
-.entry-content.prose:after{
-	content: ' ';
+/* .entry-content.prose:after {
+	content: " ";
 	height: 1px;
-	@apply block mt-6 mx-auto w-32 bg-gray-200;
-}
-.entry-content.prose .read-more{
-	@apply block text-right no-underline hover:underline uppercase text-sm font-mono;
+	@apply mx-auto mt-6 block w-32 bg-gray-200;
+} */
+.entry-content.prose .read-more {
+	@apply block text-right font-mono text-sm uppercase no-underline hover:underline;
 }
 
 .entry-meta,
-.entry-footer{
-	@apply mx-auto mt-4 mb-8 text-xs max-w-content font-mono;
+.entry-footer {
+	@apply mx-auto mt-4 mb-8 max-w-content font-mono text-xs;
 }
 
 .entry-meta > *::before,
-.entry-footer > *::before{
-	content: '—';
+.entry-footer > *::before {
+	content: "—";
 	@apply mx-2;
 }
 
 .entry-meta > *:nth-child(2):before,
-.entry-footer > *:nth-child(2):before{
-	 content: '';
+.entry-footer > *:nth-child(2):before {
+	content: "";
 	@apply mx-0;
 }
 
-
-#main{
-  @apply my-24;
+#main {
+	@apply my-24;
 }
 
-.navigation{
-	@apply max-w-xl mx-auto text-center;
+.navigation {
+	@apply mx-auto max-w-xl text-center;
 }
-.navigation.pagination .nav-links > *{
-	@apply inline-block py-1 px-3 border border-gray-200 text-gray-400 rounded-lg;
+.navigation.pagination .nav-links > * {
+	@apply inline-block rounded-lg border border-gray-200 py-1 px-3 text-gray-400;
 }
-.navigation.pagination .nav-links .current{
-	@apply bg-primary text-white border-primary;
+.navigation.pagination .nav-links .current {
+	@apply border-primary bg-primary text-white;
 }
 
-.navigation.post-navigation{
-	@apply mt-8 py-4 border-t border-b border-gray-200 text-sm;
+.navigation.post-navigation {
+	@apply mt-8 border-t border-b border-gray-200 py-4 text-sm;
 }
-.navigation.post-navigation .nav-links{
-	font-family: 'Roboto Serif', serif;
+.navigation.post-navigation .nav-links {
+	font-family: "Roboto Serif", serif;
 	@apply flex space-x-4 text-xs text-primary;
 }
-.navigation.post-navigation .nav-links > div{
-	@apply md:w-1/2 text-left;
+.navigation.post-navigation .nav-links > div {
+	@apply text-left md:w-1/2;
 }
-.navigation.post-navigation .nav-links .nav-next{
-	@apply md:w-1/2 text-right;
+.navigation.post-navigation .nav-links .nav-next {
+	@apply text-right md:w-1/2;
 }
 .navigation.post-navigation .nav-links .prev-title,
-.navigation.post-navigation .nav-links .next-title{
-	@apply block text-gray-700 text-sm text-ellipsis overflow-hidden w-full whitespace-nowrap font-sans;
+.navigation.post-navigation .nav-links .next-title {
+	@apply block w-full overflow-hidden text-ellipsis whitespace-nowrap font-sans text-sm text-gray-700;
 }
 
-#content article.post{
+#content article.post {
 	@apply mx-auto;
 }
-#content article.post figure{
-	@apply mb-6 rounded-lg overflow-hidden;
+#content article.post figure {
+	@apply mb-6 overflow-hidden rounded-lg;
 }
 
-.post-edit-link{
+.post-edit-link {
 	@apply float-right border border-primary px-3 py-1;
 }
-.post-edit-link:before{
-	content: '';
+.post-edit-link:before {
+	content: "";
 	@apply m-0;
 }

@@ -29,14 +29,11 @@ header #site-navigation .current_page_item a{
     @apply text-secondary;
 }
 
+#main-header-wrapper.fullfixed{
+    @apply fixed w-full bg-transparent;
+}
 
 .header-fixed-wrapper{
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; */
-    /* z-index: 10; */
-    /* overflow: hidden; */
     @apply fixed top-0 left-0 w-full z-10;
 }
 

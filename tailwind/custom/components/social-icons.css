@@ -1,0 +1,18 @@
+.social-icon{
+    @apply inline-block w-6 h-6;
+}
+
+.social-icon.facebook{ background: url('https://api.iconify.design/ri/facebook-fill.svg') no-repeat center center / 70%; }
+.social-icon.facebook-white{ background: url('https://api.iconify.design/ri/facebook-fill.svg?color=white') no-repeat center center / 70%; }
+
+.social-icon.instagram{ background: url('https://api.iconify.design/ri/instagram-fill.svg') no-repeat center center / 70%; }
+.social-icon.instagram-white{ background: url('https://api.iconify.design/ri/instagram-fill.svg?color=white') no-repeat center center / 70%; }
+
+.social-icon.linkedin{ background: url('https://api.iconify.design/ri/linkedin-fill.svg') no-repeat center center / 70%; }
+.social-icon.linkedin-white{ background: url('https://api.iconify.design/ri/linkedin-fill.svg?color=white') no-repeat center center / 70%; }
+
+.social-icon.twitter{ background: url('https://api.iconify.design/ri/twitter-fill.svg') no-repeat center center / 70%; }
+.social-icon.twitter-white{ background: url('https://api.iconify.design/ri/twitter-fill.svg?color=white') no-repeat center center / 70%; }
+
+.social-icon.youtube{ background: url('https://api.iconify.design/ri/youtube-fill.svg') no-repeat center center / 70%; }
+.social-icon.youtube-white{ background: url('https://api.iconify.design/ri/youtube-fill.svg?color=white') no-repeat center center / 70%; }

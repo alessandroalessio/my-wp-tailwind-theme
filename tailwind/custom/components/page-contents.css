@@ -1,79 +1,77 @@
-#content{
-    @apply mx-8;
+#content {
+	/* @apply mx-8; */
 }
 
-#content input[type=text],
-#content input[type=email],
-#content textarea{
-    @apply bg-gray-100 rounded-md;
+#content input[type="text"],
+#content input[type="email"],
+#content textarea {
+	@apply rounded-md bg-gray-100;
 }
 
-#content input[type=button],
-#content input[type=submit]{
-    @apply btn btn-primary;
+#content input[type="button"],
+#content input[type="submit"] {
+	@apply btn btn-primary;
 }
 
-
-
-#content .entry-content h1{
-    @apply text-4xl font-sans mb-2 mt-2;
+#content .entry-content h1 {
+	@apply mb-2 mt-2 font-sans text-4xl;
 }
 
-#content .entry-content h2{
-    @apply text-3xl font-sans mb-2 mt-2;
+#content .entry-content h2 {
+	@apply mb-2 mt-2 font-sans text-3xl;
 }
 
-#content .entry-content h3{
-    @apply text-2xl font-sans mb-2 mt-2;
+#content .entry-content h3 {
+	@apply mb-2 mt-2 font-sans text-2xl;
 }
 
-#content .entry-content h4{
-    @apply text-xl font-sans mb-2 mt-2;
+#content .entry-content h4 {
+	@apply mb-2 mt-2 font-sans text-xl;
 }
 
-#content .entry-content h5{
-    @apply text-lg font-sans mb-2 mt-2;
+#content .entry-content h5 {
+	@apply mb-2 mt-2 font-sans text-lg;
 }
 
-#content .entry-content h6{
-    @apply text-base font-sans mb-2 mt-2;
+#content .entry-content h6 {
+	@apply mb-2 mt-2 font-sans text-base;
 }
 
 #content .entry-content ul,
-#content .entry-content ol{
-    @apply list-inside mb-4;
+#content .entry-content ol {
+	@apply mb-4 list-inside;
 }
-#content .entry-content ul > li{
-    @apply list-item list-disc block my-2;
+#content .entry-content ul > li {
+	@apply my-2 block list-item list-disc;
 }
-#content .entry-content ol > li{
-    @apply list-item list-decimal block my-2;
-}
-
-#content .entry-content hr{
-    @apply my-6;
+#content .entry-content ol > li {
+	@apply my-2 block list-item list-decimal;
 }
 
-#content .entry-content table{
-    @apply w-full mb-8;
+#content .entry-content hr {
+	@apply my-6;
 }
 
-#content .entry-content th{
-    @apply text-left p-2;
+#content .entry-content table {
+	@apply mb-8 w-full;
 }
 
-#content .entry-content tr{
-    @apply border-b border-gray-200 hover:bg-gray-200;
+#content .entry-content th {
+	@apply p-2 text-left;
 }
 
-#content .entry-content td{
-    @apply p-2;
+#content .entry-content tr {
+	@apply border-b border-gray-200 hover:bg-gray-200;
 }
 
-#content .entry-content pre{
-    @apply block bg-gray-600 text-gray-100 font-mono p-2 rounded-md overflow-x-scroll text-sm break-words;
+#content .entry-content td {
+	@apply p-2;
 }
 
-#content .entry-content blockquote{
-    @apply font-serif text-2xl font-thin text-gray-400;
+#content .entry-content pre {
+	@apply block overflow-x-scroll break-words rounded-md bg-gray-600 p-2 font-mono text-sm text-gray-100;
+}
+
+#content .entry-content blockquote {
+	@apply font-serif text-2xl font-thin text-gray-400;
 }

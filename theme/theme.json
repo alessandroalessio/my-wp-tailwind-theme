@@ -6,17 +6,17 @@
 			"palette": [
 				{
 					"slug": "background",
-					"color": "#ffffff",
+					"color": "#000000",
 					"name": "Background"
 				},
 				{
 					"slug": "foreground",
-					"color": "#404040",
+					"color": "#ffffff",
 					"name": "Foreground"
 				},
 				{
 					"slug": "primary",
-					"color": "#D0AF21",
+					"color": "#99864B",
 					"name": "Primary"
 				},
 				{

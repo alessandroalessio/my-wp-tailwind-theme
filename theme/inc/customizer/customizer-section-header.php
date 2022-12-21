@@ -4,6 +4,21 @@ function atw_customizer_section_header( $wp_customize ) {
 		'title'      => __( 'Header', 'eazytheme' ),
 		'priority'   => 90
 	) );
+	// Header Full Fixed
+	$wp_customize->add_setting( 'atw_header_fullfixed', array(
+		'default' => 'false',
+		'transport'   => 'postMessage',
+	) );
+	  
+	$wp_customize->add_control( 'atw_header_fullfixed', array(
+		'type' => 'radio',
+		'section' => 'atw_header_section',
+		'label' => __( 'Header Full Fixed' ),
+		'choices' => array(
+			'true' => __( 'Yes', 'atw' ),
+			'false' => __( 'No' ),
+		),
+	) );
 	// Header Fixed on Scroll
 	$wp_customize->add_setting( 'atw_header_fixed_on_scroll', array(
 		'default' => 'false',
@@ -13,9 +28,9 @@ function atw_customizer_section_header( $wp_customize ) {
 	$wp_customize->add_control( 'atw_header_fixed_on_scroll', array(
 		'type' => 'radio',
 		'section' => 'atw_header_section',
-		'label' => __( 'Header Fixed on Scroll' ),
+		'label' => __( 'Header Fixed' ),
 		'choices' => array(
-			'true' => __( 'Yes' ),
+			'true' => __( 'Yes', 'atw' ),
 			'false' => __( 'No' ),
 		),
 	) );

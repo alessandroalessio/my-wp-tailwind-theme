@@ -1,3 +1,15 @@
-#footer-top{
-    @apply text-xs text-gray-400;
+footer{
+	@apply px-4 md:px-0;
+}
+footer strong {
+	@apply font-bold;
+}
+#footer-top {
+	@apply text-xs;
+}
+#footer-top .widget.widget_text{
+	@apply mb-8 md:mb-0;
+}
+#footer-top .widget-title {
+	@apply mb-2 text-sm font-bold;
 }

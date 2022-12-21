@@ -37,3 +37,9 @@
  */
 @import "tailwindcss/utilities";
 @import "./custom/utilities.css";
+
+
+/** 
+ * Customization for Website
+ */
+@import "./custom/website-custom/website-custom.css";
